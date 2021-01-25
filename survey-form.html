@@ -19,12 +19,54 @@
     </p>
 
     <form id="survey-form">
-      <label for="name">Full name:</label>
-      <input id="name" name="name" type="text" placeholder="Enter full name" required>
-      <label for="email">Email address:</label>
-      <input id="email" name="email" type="email" placeholder="Enter email address" required>
-      <label for="number">On average, how many trades do you take per week?</label>
-      <input id="number" name="number" type="number" placeholder="Enter number of trades" required>
+      <label id="name-label" for="name">Full name:</label>
+      <input id="name" name="name" type="text" placeholder="Enter full name" required><br>
+
+      <label id="email-label" for="email">Email address:</label>
+      <input id="email" name="email" type="email" placeholder="Enter email address" required><br>
+
+      <label id="number-label" for="number">On average, how many trades do you take, per week?</label>
+      <input id="number" name="number" type="number" min="0" max="100" placeholder="Enter a number from 0-100" required>
+
+      <div id="trade-tracking">
+        <p>Do you document your trades, in some capacity? e.g Journal, spreadsheet, Traderview etc.</p>
+        <input id="yes" value="yes" name="trade-tracking" type="radio">
+        <label for="yes">Yes</label>
+        <input id="no" value="no" name="trade-tracking" type="radio">
+        <label for="no">No</label>
+        <input id="sometimes" value="sometimes" name="trade-tracking" type="radio">
+        <label for="sometimes">Sometimes</label>
+      </div>
+
+      <label id="dropdown-label" for="dropdown">How often do you review your trades, in depth?</label>
+      <select id="dropdown" name="dropdown" required>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+        <option value="never">Never</option>
+      </select>
+
+      <div id="trade-type">
+        <p>What do you predominantly trade?</p>
+        <input id="equities" value="equities" name="trade-type" type="radio">
+        <label for="equities">Equities</label><br>
+        <input id="cfds" value="cfds" name="trade-type" type="radio">        
+        <label for="cfds">CFDs</label><br>
+        <input id="options" value="options" name="trade-type" type="radio">
+        <label for="options">Options</label><br>
+        <input id="futures" value="futures" name="trade-type" type="radio">
+        <label for="futures">Futures</label>
+      </div>
+
+      <div id="trade-personality">
+        <p>Check the boxes that best describe your trading style:</p>
+        <input type="checkbox" id="scalper" name="trade-personality" value="scalper">
+        <label for="scalper">Scalper</label><br>
+        <input type="checkbox" id="day-trader" name="trade-personality" value="day-trader">
+        <label for="day-trader">Day trader</label><br>
+        
+      </div>
 
 
     </form>
