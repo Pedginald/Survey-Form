@@ -8,14 +8,32 @@
     <meta name="author" content="Peter Rawlings">
     <meta name="description"  content="trading survey form">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200&display=swap');
+
+      h1 {
+        text-align: center;
+      }
+
+      body {
+        font-family: fraunces;
+        line-height: 2;
+        width: 450px;
+        margin: auto;
+      }
+
+
+    </style>
+
   </head>
 
   <body>
     <h1 id="title">Trading Survey</h1>
-    <p id="description">Thank you for opting to fill out this survey.
+    <p id="description"><i>Thank you for opting to fill out this survey.
       The aim is to gather data relating to the habits of retail traders that trade
       equities, CFDs, options, and futures, to find key behaviours that can help lead
-      to success, in this brutally challenging industry.
+      to success, in this brutally challenging industry.</i>i>
     </p>
 
     <form id="survey-form">
@@ -29,7 +47,7 @@
       <input id="number" name="number" type="number" min="0" max="100" placeholder="Enter a number from 0-100" required>
 
       <div id="trade-tracking">
-        <p>Do you document your trades, in some capacity? e.g Journal, spreadsheet, Traderview etc.</p>
+        <p>Do you document your trades, in some capacity? E.g. Journal, spreadsheet, Tradervue etc.</p>
         <input id="yes" value="yes" name="trade-tracking" type="radio">
         <label for="yes">Yes</label>
         <input id="no" value="no" name="trade-tracking" type="radio">
@@ -83,19 +101,21 @@
         <label for="profitable">Profitable</label>
         <input type="radio" id="unprofitable" name="profitability" value="unprofitable">
         <label for="unprofitable">Unprofitable</label>
+        <input type="radio" id="break-even" name="profitability" value="break-even">
+        <label for="break-even">Break even</label>
         <input type="radio" id="not-sure" name="profitability" value="not-sure">
         <label for="not-sure">Not sure</label>
       </div>
 
+      <div id="text-input">
+        <label for="reasons">Please provide details of why you think you may be profitable,
+         unprofitable or break even. E.g. Inability to cut small losses quickly,
+         not taking profits, not setting stop losses, FOMO,
+         good at waiting for A+ setups etc:</label><br>
+        <textarea id="reasons">Enter your comments here....</textarea>
+      </div>
 
-
+      <input id="submit" type="submit" value="submit">
     </form>
-
-
-
-
-
   </body>
-
-
 </html>
