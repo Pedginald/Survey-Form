@@ -1,2 +1,2 @@
-# Survey-Form
-A survey form build, allowing the user to input data
+# Trading-survey
+A stock trading survey, to gather data regarding the behaviours of different types of traders.
