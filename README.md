@@ -1,2 +1,2 @@
 # Trading-survey
-A stock trading survey, to gather data regarding the behaviours of different types of traders.
+A survey form build, allowing the user to input data relating to the habits of retail traders that trade equities, CFDs, options, and futures, to find key behaviours that can help lead to success
